@@ -1,0 +1,84 @@
+.footer {
+    background-color: var(--base-color);
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__contact {
+    flex-basis: 231px;
+}
+
+.address__items:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    color: var(--primary-white-color);    
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--anim-shown);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-focus-color);
+    }
+}
+
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+}
+
+.footer__socials-wrap {
+    margin-left: 70px;
+    margin-right: 93px;   
+}
+
+/* Підписка */
+
+.subscription__field {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px var(--grey-cl-15));
+    border-radius: 4px;
+    margin-right: 12px;
+    color: var(--primary-white-color);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+
+.subscription__btn { 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 28px;  
+}
+   
+.subscription__icon {
+    fill: var(--primary-white-color);
+}

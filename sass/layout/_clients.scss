@@ -1,0 +1,31 @@
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-main-color);
+    border-radius: 4px;
+    
+    transition: border var(--anim-shown);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--hover-focus-color);
+    }
+}
+
+
+
+.clients__icon {
+    fill: var(--icon-main-color);
+    transition: fill var(--anim-shown);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--hover-focus-color);
+    }
+
+}
+
