@@ -78,17 +78,15 @@
     }
 
     @include mb (tab-only) {
-        // flex-basis: calc((100% - 30px) / 2);
-        max-width: 354px;
-        
+        flex-basis: calc((100% - 30px) / 2);
+        max-width: 354px;  
     }
 
     @include mb (desk) {
-        // flex-basis: calc((100% - 60px) / 3);
-        max-width: 370px;
-        
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 370px;   
     }
-    
+  
 }
 
 .portfolio__link {
@@ -165,15 +163,8 @@
     @include mb (tab-only) {
         flex-grow: 1;
        
-     }
-
-   
-
-   
+     }  
 }
-
-
-
 
 
 .portfolio__name {    

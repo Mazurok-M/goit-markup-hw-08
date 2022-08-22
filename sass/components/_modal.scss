@@ -14,8 +14,8 @@
         visibility: hidden;
         pointer-events: none;
     }
-}
 
+}
 
 
 .modal {
@@ -24,13 +24,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 450px;
-    min-height: 609px;
     padding: 40px;
     border-radius: 4px;
 
     background-color: var(--primary-white-color);
     box-shadow: var(--card-shadow);
+
+    @media screen and (max-width:460px) {     
+        width: 100%;
+        min-height: 609px;
+    }
+
+    @include mb (mob) {
+        width: 450px;
+        min-height: 609px;
+    }
 
     @include mb (desk) {
         width: 528px;
@@ -38,6 +46,7 @@
     }
 
 }
+
 
 .btn-close {
     position: absolute;

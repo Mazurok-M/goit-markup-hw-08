@@ -288,13 +288,23 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
-  min-height: 609px;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: var(--card-shadow);
           box-shadow: var(--card-shadow);
+}
+@media screen and (max-width: 460px) {
+  .modal {
+    width: 100%;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -337,10 +347,15 @@ address {
   display: block;
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .register-form__title {
+    line-height: 1.15;
+  }
 }
 
 .register-form__group {
@@ -436,6 +451,13 @@ address {
           justify-content: center;
   gap: 8px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .agreement__text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .register__checkbox:checked + .agreement__icon > .agreement__unchek-icon {
@@ -1260,11 +1282,15 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__items {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__items {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
     max-width: 370px;
   }
 }

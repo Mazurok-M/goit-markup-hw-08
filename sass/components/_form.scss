@@ -3,13 +3,18 @@
     display: block;
     margin-bottom: 12px;
   
-    font-size: 20px;
-    line-height:1.15;
+    font-size: 20px; 
+    line-height:1.5; 
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--title-text-color);
+
+    @include mb (desk) {
+        line-height:1.15; 
+    }
 }
+
 
 .register-form__group {
     margin-bottom: 20px;
@@ -93,6 +98,14 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 30px;
+}
+
+
+.agreement__text {
+    @include mb (not-desk) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 }
 
 

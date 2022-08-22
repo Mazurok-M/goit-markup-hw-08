@@ -2,7 +2,6 @@
     @include mb (mob-only) {
         max-width: 450px;
     }
-    
 
     @include mb (tab) {
         flex-basis: calc((100% - 30px)/2);
@@ -12,9 +11,7 @@
         flex-basis: calc((100% - 90px)/4);
     }
 
-    // flex-basis: calc((100% - 90px)/4);
 }
-
 
 
 .features__wrap {
