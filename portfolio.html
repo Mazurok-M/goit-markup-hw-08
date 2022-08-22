@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -28,6 +28,7 @@
           <a href="./index.html" class="link logo logo--dark">
             <span class="logo__wrap">Web</span>Studio</a
           >
+
           <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="link nav__link">Студія</a>
@@ -44,21 +45,43 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a class="link contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
+            <a
+              class="link contact__link contact__mail"
+              href="mailto:info@devstudio.com"
+            >
+              <svg
+                class="contact__icon contact__icon-mail"
+                width="14"
+                height="10"
+              >
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contact__item">
-            <a class="link contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
+            <a class="link contact__link contact__tel" href="tel:+380961111111">
+              <svg
+                class="contact__icon contact__icon-tel"
+                width="10"
+                height="14"
+              >
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11
             </a>
           </li>
         </ul>
+        <!-- Моб меню -->
+        <button
+          class="mobile-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-btn__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -90,9 +113,21 @@
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
                   <img
-                    src="images/website.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio1-354.jpg 354w,
+                      ./images/portfolio/portfolio1-370.jpg 370w,
+                      ./images/portfolio/portfolio1-450.jpg 450w,
+                      ./images/portfolio/portfolio1-708.jpg 708w,
+                      ./images/portfolio/portfolio1-740.jpg 740w,
+                      ./images/portfolio/portfolio1-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio1-450.jpg"
                     alt="Веб-сайт на ноутбуке"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
@@ -113,9 +148,21 @@
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
                   <img
-                    src="images/poster.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio2-354.jpg 354w,
+                      ./images/portfolio/portfolio2-370.jpg 370w,
+                      ./images/portfolio/portfolio2-450.jpg 450w,
+                      ./images/portfolio/portfolio2-708.jpg 708w,
+                      ./images/portfolio/portfolio2-740.jpg 740w,
+                      ./images/portfolio/portfolio2-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio2-450.jpg"
                     alt="Постер с баскетболистами"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
@@ -138,9 +185,21 @@
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
                   <img
-                    src="images/sheafood.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio3-354.jpg 354w,
+                      ./images/portfolio/portfolio3-370.jpg 370w,
+                      ./images/portfolio/portfolio3-450.jpg 450w,
+                      ./images/portfolio/portfolio3-708.jpg 708w,
+                      ./images/portfolio/portfolio3-740.jpg 740w,
+                      ./images/portfolio/portfolio3-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio3-450.jpg"
                     alt="Эмблема ресторана Seafood"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
@@ -160,7 +219,23 @@
             <li class="portfolio__items">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
-                  <img src="images/headphones.jpg" alt="Наушники" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio4-354.jpg 354w,
+                      ./images/portfolio/portfolio4-370.jpg 370w,
+                      ./images/portfolio/portfolio4-450.jpg 450w,
+                      ./images/portfolio/portfolio4-708.jpg 708w,
+                      ./images/portfolio/portfolio4-740.jpg 740w,
+                      ./images/portfolio/portfolio4-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio4-450.jpg"
+                    alt="Наушники"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -179,7 +254,23 @@
             <li class="portfolio__items">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
-                  <img src="images/boxes.jpg" alt="Коробки" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio5-354.jpg 354w,
+                      ./images/portfolio/portfolio5-370.jpg 370w,
+                      ./images/portfolio/portfolio5-450.jpg 450w,
+                      ./images/portfolio/portfolio5-708.jpg 708w,
+                      ./images/portfolio/portfolio5-740.jpg 740w,
+                      ./images/portfolio/portfolio5-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio1-450.jpg"
+                    alt="Коробки"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -198,7 +289,23 @@
             <li class="portfolio__items">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
-                  <img src="images/monitor.jpg" alt="Монитор" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio6-354.jpg 354w,
+                      ./images/portfolio/portfolio6-370.jpg 370w,
+                      ./images/portfolio/portfolio6-450.jpg 450w,
+                      ./images/portfolio/portfolio6-708.jpg 708w,
+                      ./images/portfolio/portfolio6-740.jpg 740w,
+                      ./images/portfolio/portfolio6-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio6-450.jpg"
+                    alt="Монитор"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -217,7 +324,23 @@
             <li class="portfolio__items">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
-                  <img src="images/magazine.jpg" alt="Журнал" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio7-354.jpg 354w,
+                      ./images/portfolio/portfolio7-370.jpg 370w,
+                      ./images/portfolio/portfolio7-450.jpg 450w,
+                      ./images/portfolio/portfolio7-708.jpg 708w,
+                      ./images/portfolio/portfolio7-740.jpg 740w,
+                      ./images/portfolio/portfolio7-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio7-450.jpg"
+                    alt="Журнал"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,7 +359,23 @@
             <li class="portfolio__items">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
-                  <img src="images/label.jpg" alt="Лейбл" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/portfolio8-354.jpg 354w,
+                      ./images/portfolio/portfolio8-370.jpg 370w,
+                      ./images/portfolio/portfolio8-450.jpg 450w,
+                      ./images/portfolio/portfolio8-708.jpg 708w,
+                      ./images/portfolio/portfolio8-740.jpg 740w,
+                      ./images/portfolio/portfolio8-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio8-450.jpg"
+                    alt="Лейбл"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -256,9 +395,21 @@
               <a class="link portfolio__link" href="">
                 <div class="portfolio__wrap">
                   <img
-                    src="images/laptop.jpg"
+                    srcset="
+                      ./images/portfolio/portfolio9-354.jpg 354w,
+                      ./images/portfolio/portfolio9-370.jpg 370w,
+                      ./images/portfolio/portfolio9-450.jpg 450w,
+                      ./images/portfolio/portfolio9-708.jpg 708w,
+                      ./images/portfolio/portfolio9-740.jpg 740w,
+                      ./images/portfolio/portfolio9-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px)
+                  354px, 100vw"
+                    src="./images/portfolio/portfolio9-450.jpg"
                     alt="Ноутбук с бизнес-приложением"
-                    width="370"
+                    width="450"
+                    height="294"
+                    loading="lazy"
                   />
                   <div class="portfolio__aside">
                     <p class="portfolio__desc">
@@ -395,5 +546,62 @@
         </div>
       </div>
     </footer>
+
+     <!-- Мобільне меню -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-menu">
+    <button class="mobile-menu__bt js-close-menu" type="button">
+      <svg class="mobile-menu__icon" width="19" height="19">
+        <use href="./images/icons.svg#close-menu"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./index.html">Студія</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Контакти</a></li>
+    </ul>
+    <ul class="mobile-menu-contact">
+      <li class="mobile-menu-contact__item">
+        <a 
+        class="link mobile-menu-contact__tel" 
+        href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+      <li class="mobile-menu-contact__item"> 
+        <a
+        class="link mobile-menu-contact__mail"
+        href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </a></li>
+    </ul>
+    <ul class="mobile-menu-social">
+      <li class="mobile-menu-social__item"> 
+        <a class="link mobile-menu-social__link"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer">Instagram</a> 
+      </li>
+      <li class="mobile-menu-social__item"> <a class="link mobile-menu-social__link"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer">Twitter</a> </li>
+      <li class="mobile-menu-social__item"> <a class="link mobile-menu-social__link"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer"> Facebook</a></li>
+      <li class="mobile-menu-social__item"> <a class="link mobile-menu-social__link"
+        href=""
+        target="_blank"
+        rel="nofollow noopener noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

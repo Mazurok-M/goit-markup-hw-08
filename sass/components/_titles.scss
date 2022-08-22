@@ -17,11 +17,21 @@
 
 
 .title {
-    margin-bottom: 50px;
-
-    font-size: 36px;
-    line-height:1.17;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+    
     text-align: center;
 
     color: var(--title-text-color);
+
+    @include mb (desk) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height:1.17;
+    }
 }
+
+
+
+

@@ -1,6 +1,7 @@
 
 
 @import './utils/variables.scss';
+@import './utils/mixins';
 @import './utils/visually-hidden';
 
 @import './base/common.scss';
@@ -13,6 +14,7 @@
 @import './components/socials';
 @import './components/modal';
 @import './components/form';
+@import './components/mobile-menu';
 
 @import './layout/header.scss';
 @import './layout/hero';

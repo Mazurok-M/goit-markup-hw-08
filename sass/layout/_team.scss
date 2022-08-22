@@ -6,8 +6,27 @@
 .team__items{
     background-color: var(--primary-white-color); 
     box-shadow: var(--card-shadow);
-    border-radius: 0px 0px 4px 4px;    
+    border-radius: 0px 0px 4px 4px; 
+    
+    @include mb (mob-only) {
+        max-width: 450px;
+    }
+
+    @include mb (tab-only) {
+        max-width: 354px;
+    }
+
+    @include mb (desk) {
+        max-width: 270px;
+    }
 }
+
+
+
+
+// .team_img {
+//     width: 450px;
+// }
 
 .team__wrapor {
     padding: 30px 10px;

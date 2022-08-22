@@ -20,13 +20,37 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    // width: 480px;
+   
+    // max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
+    @include mb (mob) {
+        width: 480px;
+    }
+
+    @include mb (tab) {
+        width: 768px;
+    }
+
+    @include mb (desk) {
+        width: 1200px;
+    }
+
 }
 
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mb (desk) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }

@@ -1,18 +1,53 @@
 .footer {
+
     background-color: var(--base-color);
     padding: 60px 0;
+    
+    @include mb (not-desk) {
+        text-align: center;
+    }
+
 }
 
 .footer__container {
+  
+    @include mb (tab) {
     display: flex;
+    }
+
+    @include mb (tab-only) { 
+        flex-wrap: wrap;
+        row-gap: 60px;
+        column-gap: 165px;
+        justify-content: center;
+
+        padding-left: 76px;
+        padding-right: 76px;
+    }
+ 
 }
+
 
 .footer__contact {
-    flex-basis: 231px;
+   
+    @include mb (mob-only) {
+        margin-bottom: 60px;
+    }
+    
+    @include mb (desk) {
+        width: 231px;
+    }
+
 }
 
+
+
 .address__items:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include mb (desk) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-address {
@@ -36,15 +71,25 @@
     color: var(--primary-white-color);
 }
 
+
 .footer__socials-wrap {
-    margin-left: 70px;
-    margin-right: 93px;   
+
+    @include mb (mob-only) {
+        margin-bottom: 60px;
+    }
+
+    @include mb (desk) {
+        margin-left: 70px;
+        margin-right: 93px; 
+    }
+ 
+     
 }
 
 /* Підписка */
 
 .subscription__field {
-    width: 358px;
+   
     height: 50px;
     padding: 15px 16px;
 
@@ -65,9 +110,18 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @include mb (not-desk) {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    @include mb (desk) {
+        width: 358px;
+    }
+    
 }
-
-
 
 
 .subscription__btn { 
