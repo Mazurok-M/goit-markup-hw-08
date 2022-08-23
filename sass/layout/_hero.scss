@@ -7,6 +7,7 @@
 
     background-repeat: no-repeat;
     background-position:center;
+    background-size: cover;
 
    
 
@@ -15,18 +16,6 @@
     }
 
     @include mb (mob-only) {
-
-        max-width: 480px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../images/hero/hero-@1x_sm.jpg);
-       
-        @include mb (retina) {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-            url(../images/hero/hero-@2x_sm.jpg);
-        }
-    }
-
-    @include mb (tab-only) {
 
         max-width: 768px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
@@ -38,13 +27,9 @@
         }
     }
 
+    @include mb (tab) {
 
-  
-
-    @include mb (desk) {
-        padding: 200px 0;
         max-width: 1600px;
-
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
         url(../images/hero/hero-@1x_lg.jpg);
        
@@ -52,6 +37,14 @@
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
             url(../images/hero/hero-@2x_lg.jpg);
         }
+    }
+
+
+  
+
+    @include mb (desk) {
+        padding: 200px 0;
+       
     }
 
 }
